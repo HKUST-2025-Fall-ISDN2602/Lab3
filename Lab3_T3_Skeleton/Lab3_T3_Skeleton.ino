@@ -9,7 +9,17 @@ void setup() {
 }
 
 void loop() {
-    int heartValue = analogRead(?); // Read the value 
-    Serial.println(?); // send the value to serial plotter 
-    delay(10);
+    int heartSum=0; // Initialize a variable to hold the sum of heart readings
+    float heartAverage;  // Declare a variable to hold the average heart reading
+
+    // Loop to read heart sensor values 20 times
+    for (int i=0; i< 20; i++) }
+       heartSum += analogRead(?); // Read the value from the heartbeat sensor and add it to heartSum 
+       }
+
+    heartAverage = ?; // Divide the heartSum by 20 to get the average
+
+    Serial.println(?); // send the value to serial plotter
+     
+    delay(?); // read the value every 100 ms
 }
